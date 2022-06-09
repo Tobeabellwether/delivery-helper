@@ -4,7 +4,7 @@ WeChat is China's most popular social platform developed by [Tencent](https://en
 
 ![image](https://user-images.githubusercontent.com/24925361/172895383-490fd897-9c52-46dd-9101-a68ec9fed77d.png)
 
-The program is a [WeChat Mini Program](https://walkthechat.com/wechat-mini-programs-simple-introduction/) designed to help overseas students carry items between university and their hometowns while earning some pocket money.
+This program is a [WeChat Mini Program](https://walkthechat.com/wechat-mini-programs-simple-introduction/) designed to help overseas students carry items between university and their hometowns while earning some pocket money.
 
 Search “帮带报名” in WeChat
 
