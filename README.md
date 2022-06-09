@@ -12,5 +12,5 @@ Search “帮带报名” in WeChat
 
 ![image](https://user-images.githubusercontent.com/24925361/172892391-9eb09c6f-854e-465f-9155-397db35cfaf8.png)
 
-![image](https://user-images.githubusercontent.com/24925361/172898938-1cbefccc-b84e-4701-a5fc-c11f2ce87438.png)
+<img width="1200" alt="image" src= "https://user-images.githubusercontent.com/24925361/172898938-1cbefccc-b84e-4701-a5fc-c11f2ce87438.png">
 
