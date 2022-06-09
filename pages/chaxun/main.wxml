@@ -1,0 +1,33 @@
+<van-cell label="查询列表里默认都为提供帮带的，求帮带直接联系现有的帮带即可，如实在需要求帮带可发起一个活动备注“求帮带”"></van-cell>
+<van-cell bind:click="onClick_feedback" title="问题反馈">
+    <van-icon name="info-o" slot="right-icon"></van-icon>
+</van-cell>
+<van-popup bind:close="onClose_feedback" overlay="{{true}}" position="bottom" show="{{show_feedback}}">
+    <van-card desc="微信号：{{my_id}}" thumb="{{my_figure}}" title="用户昵称：{{my_nickname}}">
+        <view slot="footer">
+            <van-button bind:click="copy_mynickname" plain="true" size="mini" type="primary">复制昵称</van-button>
+            <van-button bind:click="copy_myid" plain="true" size="mini" type="primary">复制微信</van-button>
+        </view>
+    </van-card>
+</van-popup>
+<van-cell title="类型" value="报名截止"></van-cell>
+<view wx:for="{{allData}}" wx:key="{{_id}}">
+    <van-cell isLink arrowDirection="down" bind:click="onClick_user" id="{{item._id}}" label="{{item.remark}}" title="{{item.direction}}" value="{{item.date}}"></van-cell>
+</view>
+<van-popup bind:close="onClose_user" overlay="{{true}}" position="bottom" show="{{show_user}}">
+    <van-card desc="微信号：{{user_id}}" thumb="{{user_figure}}" title="用户昵称：{{user_nickname}}">
+        <view slot="footer">
+            <van-button bind:click="copy_nickname" plain="true" size="mini" type="primary">复制昵称</van-button>
+            <van-button bind:click="copy_id" plain="true" size="mini" type="primary">复制微信</van-button>
+        </view>
+    </van-card>
+</van-popup>
+<view wx:if="{{not_confirm}}">
+    <van-dialog showCancelButton bind:cancel="onClick_cancel" bind:confirm="onClick_confirm" cancelButtonText="拒绝" confirmButtonText="接受" message="帮带物品：中德两国有关法律允许航空铁路携带（托运）的物品
+
+说明：海关如果出现罚款、扣税、或没收，所有产生费用损失均由委托人承担。
+
+免责声明： 本程序旨在为克劳的同学提供一个免费帮带信息交流的平台，一切交易由帮带双方自愿达成，如双方出现纠纷，开发者本人不承担任何法律责任" messageAlign="left" show="{{show_rules}}" title="帮带共识"></van-dialog>
+</view>
+<van-toast duration="30" id="van-toast" type="html"></van-toast>
+<van-notify id="van-notify"></van-notify>

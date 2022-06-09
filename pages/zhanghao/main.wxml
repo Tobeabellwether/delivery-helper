@@ -1,0 +1,21 @@
+<van-cell label="自己创建的活动在这里，请下拉以刷新，因为网络延迟有时可能需要刷新两次。点击一个活动可以使用物品清单，删除活动"></van-cell>
+<van-cell title="我发起的活动"></van-cell>
+<view wx:for="{{myActivity}}" wx:key="{{_id}}">
+    <van-cell bind:click="onClick_edit" id="{{item._id}}" title="{{item.direction}}" value="{{item.date}}"></van-cell>
+</view>
+<van-popup bind:close="onClose_edit" overlay="{{true}}" position="bottom" show="{{show_edit}}">
+    <van-cell title="数量">
+        <van-stepper integer bind:change="onChange_quantity" value="{{quantity}}"></van-stepper>
+    </van-cell>
+    <van-cell title="质量(KG，小数自己输)">
+        <van-stepper bind:change="onChange_weight" min="0" value="{{weight}}"></van-stepper>
+    </van-cell>
+    <van-cell-group>
+        <van-field bind:change="onChange_itemName" label="名称" placeholder="请输入物品名称" type="textarea" value="{{itemName}}"></van-field>
+        <van-field bind:change="onChange_userName" label="昵称/微信" placeholder="可输入委托人信息便于之后查询" type="textarea" value="{{userName}}"></van-field>
+    </van-cell-group>
+    <van-button bind:click="upload_Data" size="large" type="primary">添加物品</van-button>
+    <van-button bind:click="jump_items" size="large" type="info">物品清单</van-button>
+    <van-button bind:click="delete_Data" size="large" type="danger">删除活动</van-button>
+</van-popup>
+<van-toast duration="30" id="van-toast" type="success"></van-toast>

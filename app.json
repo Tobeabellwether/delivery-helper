@@ -1,0 +1,39 @@
+{
+  "pages": [
+    "pages/chaxun/main",
+    "pages/zhanghao/main",
+    "pages/fabu/main",
+    "pages/items/main"
+  ],
+  "window": {
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTitleText": "帮带报名",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/chaxun/main",
+        "text": "查找活动",
+        "iconPath": "images/chaxun.png",
+        "selectedIconPath": "images/chaxun_a.png"
+      },
+      {
+        "pagePath": "pages/fabu/main",
+        "text": "发起活动",
+        "iconPath": "images/bianji.png",
+        "selectedIconPath": "images/bianji_a.png"
+      },
+      {
+        "pagePath": "pages/zhanghao/main",
+        "text": "我的活动",
+        "iconPath": "images/zhanghao.png",
+        "selectedIconPath": "images/zhanghao_a.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap76.json"
+}

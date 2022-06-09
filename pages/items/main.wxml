@@ -1,0 +1,11 @@
+<van-cell label="点击条目可以复制委托人昵称/微信，删除错误/已完成条目"></van-cell>
+<van-cell title="物品名称" value="数量 x 重量"></van-cell>
+<view wx:for="{{myDetail}}" wx:key="{{_id}}">
+    <van-cell bind:click="onClick_delete" id="{{item._id}}" label="昵称/微信：{{item.userName}}" title="{{item.itemName}}" value="{{item.quantity}} x {{item.weight}} kg"></van-cell>
+</view>
+<van-cell title="总重量" value="{{total_weight}} kg"></van-cell>
+<van-popup bind:close="onClose_delete" overlay="{{true}}" position="bottom" show="{{show_delete}}">
+    <van-button bind:click="copy_Nickname" size="large" type="primary">复制昵称/微信</van-button>
+    <van-button bind:click="delete_Item" size="large" type="danger">删除物品</van-button>
+</van-popup>
+<van-toast duration="30" id="van-toast" type="success"></van-toast>

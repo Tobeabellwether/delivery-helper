@@ -1,0 +1,19 @@
+<van-cell label="德国境内带KFC，海鲜之类的请选择类型“德国内”，并在备注中补充详细信息，比如帮带的类型，具体的时间"></van-cell>
+<van-cell isLink arrowDirection="down" bind:click="onClick_direction" title="选择类型" value="{{direction}}"></van-cell>
+<van-popup bind:close="onClose_direction" overlay="{{true}}" position="bottom" show="{{show_direction}}">
+    <van-picker showToolbar bind:cancel="onCancel_direction" bind:confirm="onConfirm_direction" columns="{{columns}}"></van-picker>
+</van-popup>
+<van-cell isLink arrowDirection="down" bind:click="onClick_date" title="选择日期" value="{{date}}"></van-cell>
+<van-popup bind:close="onClose_date" overlay="{{true}}" position="bottom" show="{{show_date}}">
+    <van-datetime-picker bind:cancel="onCancel_date" bind:confirm="onConfirm_date" bind:input="onInput" formatter="{{formatter}}" maxDate="{{maxDate}}" minDate="{{minDate}}" type="date" value="{{currentDate}}"></van-datetime-picker>
+</van-popup>
+<van-cell-group>
+    <van-field bind:change="onChange_id" border="true" label="ID" placeholder="微信号/绑定的手机号 以便联系" type="textarea" value="{{user_id}}"></van-field>
+</van-cell-group>
+<van-cell-group>
+    <van-field autosize="true" bind:change="onChange_remark" border="true" label="备注" placeholder="按个人需求选填" type="textarea" value="{{remark}}"></van-field>
+</van-cell-group>
+<van-button bindgetuserinfo="bindGetUserInfo" openType="getUserInfo" size="large" type="primary" wx:if="{{canIUse}}">
+创建报名</van-button>
+<van-cell label="注：创建报名将会使用您的头像和昵称以便于参与者找到您，填写ID可以更容易地找到您"></van-cell>
+<van-toast duration="30" id="van-toast" type="success"></van-toast>

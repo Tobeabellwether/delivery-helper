@@ -1,0 +1,22 @@
+{
+    "component": true,
+    "usingComponents": {
+        "van-card": "/../miniprogram_npm/vant-weapp/card/index",
+        "van-button": "/../miniprogram_npm/vant-weapp/button/index",
+        "van-cell": "/../miniprogram_npm/vant-weapp/cell/index",
+        "van-cell-group": "/../miniprogram_npm/vant-weapp/cell-group/index",
+        "van-collapse": "/../miniprogram_npm/vant-weapp/collapse/index",
+        "van-collapse-item": "/../miniprogram_npm/vant-weapp/collapse-item/index",
+        "van-datetime-picker": "/../miniprogram_npm/vant-weapp/datetime-picker/index",
+        "van-dialog": "/../miniprogram_npm/vant-weapp/dialog/index",
+        "van-field": "/../miniprogram_npm/vant-weapp/field/index",
+        "van-icon": "/../miniprogram_npm/vant-weapp/icon/index",
+        "van-notice-bar": "/../miniprogram_npm/vant-weapp/notice-bar/index",
+        "van-notify": "/../miniprogram_npm/vant-weapp/notify/index",
+        "van-picker": "/../miniprogram_npm/vant-weapp/picker/index",
+        "van-popup": "/../miniprogram_npm/vant-weapp/popup/index",
+        "van-stepper": "/../miniprogram_npm/vant-weapp/stepper/index",
+        "van-swipe-cell": "/../miniprogram_npm/vant-weapp/swipe-cell/index",
+        "van-toast": "/../miniprogram_npm/vant-weapp/toast/index"
+    }
+}
