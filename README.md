@@ -1,4 +1,4 @@
-# delivery-helper
+# Delivery Helper
 
 The program is a [WeChat Mini Program](https://walkthechat.com/wechat-mini-programs-simple-introduction/) designed to help overseas students carry items between university and their hometowns while earning some pocket money.
 
