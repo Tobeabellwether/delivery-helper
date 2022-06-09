@@ -2,7 +2,7 @@
 
 WeChat is China's most popular social platform developed by [Tencent](https://en.wikipedia.org/wiki/Tencent), with more than one billion users.
 
-![image](https://user-images.githubusercontent.com/24925361/172896270-a8458401-ef4b-470f-90e5-f07dba8cb0f2.png)
+<img width="721" alt="image" src="https://user-images.githubusercontent.com/24925361/172896847-d2df0661-f634-4fce-bcea-d1b4fe26810f.png">
 
 ![image](https://user-images.githubusercontent.com/24925361/172895383-490fd897-9c52-46dd-9101-a68ec9fed77d.png)
 
